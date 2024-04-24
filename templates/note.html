@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q-note</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h1 class="nav-item login" onclick="window.location.href='/'">Назад</h1>
+    </header>
+    <form action="/update-note?id={{note.0.0}}" method="POST">
+        <main class="main m-note">
+            <h1 class="title">Редагувати нотатку</h1>
+            <div class="user-notes">
+                <div class="note">
+                    <input name="title" class="inp-change" value="{{ note.0.1 | safe }}">
+                    <textarea name="text" class="inp-change" cols="40" rows="15">{{ note.0.2 | safe}}</textarea>
+                    <button class="nav-item new" type="submit">Зберегти</button>
+                </div>
+                <h1 class="nav-item del" onclick="window.location.href='/delete-note?id={{ note.0.0 }}'">Видалити</h1>
+            </div>
+        </main>
+    </form>
+    <script>
+
+    </script>
+</body>
+</html>

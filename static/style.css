@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font-family: "Mulish", sans-serif; */
+    font-family: "Exo 2", sans-serif;
+    background: #000000;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* font-size: 15px; */
+    color: #ffffff;
+    padding: 10px;
+    border-bottom: 2px solid #ffffff;
+    user-select: none;
+}
+
+main {
+    padding: 0px 10px;
+}
+
+.logo {
+    font-size: 25px;
+    border-bottom: 2px solid #E7B10A;
+    transition: border .15s;
+}
+
+.logo:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #000000;
+}
+
+.login {
+    font-size: 20px;
+    /* font-weight: 400; */
+    padding: 1.5px 10px;
+    border: 2px solid #E7B10A;
+    background: #E7B10A;
+    border-radius: 50px;
+    color: #000000;
+    transition: all .15s;
+    text-align: center;
+}
+
+.login:active {
+    cursor: pointer;
+    border: 2px solid #E7B10A;
+    background: #000000;
+    color: #000000;
+}
+
+.login:hover {
+    cursor: pointer;
+    border: 2px solid #E7B10A;
+    background: #000000;
+    color: #ffffff;
+}
+
+.new {
+    font-family: "Exo 2", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 1.5px 10px;
+    border: 2px solid #E7B10A;
+    background: #000000;
+    border-radius: 50px;
+    color: #ffffff;
+    transition: all .15s;
+    text-align: center;
+    margin-right: 5px;
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    user-select: none;
+}
+
+.del {
+    font-family: "Exo 2", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 1.5px 10px;
+    border: 2px solid #E7B10A;
+    background: #E7B10A;
+    border-radius: 50px;
+    color: #000000;
+    transition: all .15s;
+    text-align: center;
+    margin-right: 5px;
+    position: fixed;
+    bottom: 15px;
+    left: 10px;
+    user-select: none;
+}
+
+.new:active {
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    background: #E7B10A;
+    color: #000000;
+}
+
+.del:active {
+    border: 2px solid #E7B10A;
+    color: #ffffff;
+    background: #000000;
+}
+
+.del:hover {
+    cursor: pointer;
+    border: 2px solid #E7B10A;
+    color: #ffffff;
+    background: #000000;
+}
+
+.new:hover {
+    cursor: pointer;
+    border: 2px solid #E7B10A;
+    background: #E7B10A;
+    color: #000000;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.error {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+}
+
+.m-reg {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inp {
+    margin: 10px;
+    outline: none;
+    background: #000000;
+    border: 2px solid #ffffff;
+    padding: 7.5px;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 18px;
+    width: 200%;
+    /* text-align: center; */
+    font-weight: 700;
+    font-family: "Exo 2", sans-serif;
+}
+
+.inp::placeholder {
+    color: #ffffff;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    /* text-align: center; */
+    font-weight: 700;
+}
+
+.submit {
+    margin-top: 10px;
+    width: 150%;
+    outline: none;
+    background: #ffffff;
+    border: 2px solid #000000;
+    padding: 7.5px;
+    border-radius: 50px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all .15s;
+    font-family: "Exo 2", sans-serif;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.submit:active {
+    background: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.-login {
+    border-bottom: 1.5px solid #ffffff;
+    user-select: none;
+    transition: border .15s;
+}
+
+.-login:hover {
+    cursor: pointer;
+    border-bottom: 1.5px solid #000000;
+}
+
+.-login:active {
+    border-bottom: 1.5px solid #000000;
+}
+
+.title {
+    text-align: center;
+}
+
+.hello {
+    font-size: 32.5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.username {
+    font-weight: 700;
+    color: #E7B10A;
+}
+
+.your-notes {
+    margin-top: 15px;
+}
+
+.settings {
+    font-size: 25px;
+    padding: 5px;
+    border: 2px solid #E7B10A;
+    border-radius: 50px;
+}
+
+.note-container {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.t2 {
+    margin-bottom: 15px;
+}
+
+.area {
+    border-radius: 20px;
+}
+
+.user-notes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.note {
+    border: 2px solid #E7B10A;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 12.5px;
+    /* width: 100%; */
+    user-select: none;
+}
+
+.n-title {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.n-text {
+    padding: 5px;
+    background: #242424;
+    border-left: 2.5px solid #E7B10A;
+    border-radius: 0 20px 20px 0;
+    font-size: 20px;
+}
+
+.m-note {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inp-change {
+    margin: 10px;
+    outline: none;
+    background: #000000;
+    border: 2px solid #ffffff;
+    padding: 7.5px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    width: 90%;
+    font-weight: 700;
+    font-family: "Exo 2", sans-serif;
+}
